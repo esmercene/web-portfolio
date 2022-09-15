@@ -107,6 +107,8 @@ nav ul li a:hover::after {
     color: royalblue;
     font-style: italic;
 }
+
+
 /*Navbar End*/
 
 
@@ -192,6 +194,13 @@ nav ul li a:hover::after {
     color: white;
 }
 
+.head-icon {
+    font-size: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+
+}
 
 /*Profile Section*/
 
