@@ -1,4 +1,4 @@
-
+ 
 *{
     margin: 0;
     padding: 0;
@@ -258,7 +258,7 @@ nav ul li a:hover::after {
     width: 800%;
     height: 0%;
     position: relative;
-    display: flex; 
+    display: block; 
     align-items: center;
     position: relative;
     color: white;
