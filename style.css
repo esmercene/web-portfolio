@@ -26,7 +26,8 @@ html {
     background-repeat: no-repeat;
     font-family: cursive;
     padding-bottom: 5px;
-    background-position: cover s;
+    background-position: cover;
+
 
 }
 
@@ -124,9 +125,21 @@ nav ul li a:hover::after {
   
 } 
 
-#profile {
-    background-color: #F8F8FF;
+/*#profile {
+    background-color: #FFDDCA;
+}*/
+
+.iimage {
+    transition: transform 0.5s;
+    box-shadow: 5px 10px;
+    margin-bottom: 8px;
+    text-decoration: none;
+    
 }
+.iimage:hover {
+    transform: translateY(-7px);
+}
+
 
 .h1-about {
     font-family: serif;
@@ -202,6 +215,31 @@ nav ul li a:hover::after {
 
 }
 
+#headingOne {
+    background-color: #00BFFF;
+    transition: transform 0.5s;
+}
+
+#headingTwo {
+    background-color: #00BFFF;
+    transition: transform 0.5s;
+}
+
+#headingThree {
+    background-color: #00BFFF;
+    transition: transform 0.5s;
+}
+
+#headingOne:hover {
+      transform: translateY(-7px);
+}
+
+#headingTwo:hover {
+      transform: translateY(-7px);
+}
+#headingThree:hover {
+      transform: translateY(-7px);
+}
 /*Profile Section*/
 
 
@@ -209,8 +247,9 @@ nav ul li a:hover::after {
 
 
 /*Skills*/
-#myprojects {
+#project {
     padding: 50px 0;
+    /*background-color: #FFE6E8;*/
 
 }
  .head-project {
@@ -365,6 +404,7 @@ nav ul li a:hover::after {
     background: #4EE2EC;
     color: gray;
     margin-top: 18px;
+
 }
 
 
