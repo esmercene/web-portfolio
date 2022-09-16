@@ -377,7 +377,8 @@ nav ul li a:hover::after {
 }
 
 .cont-form {
-    background-color: #95B9C7;
+     background: linear-gradient(rgba(0,224,254,0.7),rgba(17,7,254,0.3));
+
 }
 
 .contact {
@@ -388,7 +389,7 @@ nav ul li a:hover::after {
 .sub-title {
     font-family: monospace;
     font-size: 60px;
-    text-align: center;
+    text-align: right;
     align-items: center;
     color: red;
 
@@ -400,11 +401,11 @@ nav ul li a:hover::after {
     margin-right: 0px;
     margin-top: 30px;
     margin-right: 30px;
-    margin-left: 20px;
+    margin-left: 50px;
     font-size: 20px;
     font-family: monospace;
-    text-align: left;
-    align-items: left;
+    text-align: right;
+    align-items: center;
 }
 
 .social-icons a {
@@ -426,7 +427,7 @@ nav ul li a:hover::after {
 
 
 .btt {
-    text-align: center;
+    text-align: right;
     scroll-behavior: smooth !important;
     font-family: monospace;
 }

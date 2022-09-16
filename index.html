@@ -236,25 +236,25 @@
                             <h5 class="mb-4 text-primary">Send Your Inquiry</h5>
                             <div class="cont-form container-fluid text-light col-xl-6 col-lg-6  
                                   col-md-6 col-sm-12 mx-auto">
-                                <form>
-                                <div class="form-group pt-2" >
-                                    <label for="exampleFormControlInput1">Name</label>
-                                    <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Your Name" required>
+                                <form action="https://formsubmit.co/esmercene2428@gmail.com" method="POST">
+                                <div class="form-group pt-2">
+                                    <label for="name">Name</label>
+                                    <input type="name" class="form-control" id="name" name="Name"placeholder="Your Name" required>
                                   </div>
 
                                   <div class="form-group">
-                                    <label for="exampleFormControlInput2">Email Address</label>
-                                    <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com" required>
+                                    <label for="email">Email Address</label>
+                                    <input type="email" class="form-control" id="email" name="Email"placeholder="name@example.com" required>
                                   </div>
 
                                   <div class="form-group">
-                                    <label for="exampleFormControlInput3">Contact Number</label>
-                                    <input type="number" class="form-control" id="exampleFormControlInput3" placeholder="+63900 123 4567" required>
+                                    <label for="number">Contact Number</label>
+                                    <input type="number" class="form-control" id="number" number="Number" placeholder="+63900 123 4567" required>
                                   </div>
                                   
                                   <div class="form-group">
-                                    <label for="exampleFormControlTextarea1">Message</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Your Message"></textarea>
+                                    <label for="message">Message</label>
+                                    <textarea class="form-control" id="message" rows="6" name="Message" placeholder="Your Message"></textarea>
                                   </div>
                                 </form>
                             
@@ -263,7 +263,7 @@
 
                             <!-- Modal  -->
                             <section class="pb-3">
-                                <!-- Button trigger modal -->
+                                <!--  Button trigger modal -->
                                 <button type="button" class="btn btn-primary bg-dark" data-toggle="modal" data-target="#exampleModal">
                                   Submit
                                 </button>
@@ -314,7 +314,28 @@
 
        
 
-        <!-- Bootstrap Script -->
+        <!-- Script -->
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendEmail(){
+                Email.send({
+                    Host : "smtp.gmail.com",
+                    Username : "esmercene2428@gmail.com",
+                    Password : "u{N%I%Uo",
+                    To : 'esmercene2428@gmail.com',
+                    From : document.getElementById("email").value,
+                    Subject : "New Contact Inquiry",
+                    Body : "Name: " + document.getElementById("name").value
+                        + "<br> Email: " + document.getElementById("email").value
+                        + "<br> Phone No: " + document.getElementById("phone").value
+                        + "<br> Message: " + document.getElementById("phone").value
+                }).then(
+                  message => alert("Message Sent Successfully")
+                );
+            }
+        </script>
+       
+
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
         <script>
             var typed = new Typed(".auto-input", { 
@@ -324,8 +345,11 @@
                 loop: true
             })
         </script>
+
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+        
 </body> 
 </html>
 
